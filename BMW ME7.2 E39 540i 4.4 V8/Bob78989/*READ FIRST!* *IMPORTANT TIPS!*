@@ -1,0 +1,25 @@
+For anybody that stumbles across this folder, I want to make it known that the ME7.2 ECU for the BMW 540i cars have many
+different versions of the firmware.
+
+Each version of the firmware is different, and the memory locations corresponding to the XDF files are all different.
+If you find these 64k dumps, and you flash them to a vehicle with the wrong firmware this could potentially damage your ecu, or car.
+
+You must make sure you have the same initial firmware version, and only flash a 64k tune that matches your firmware version.
+
+The bins in this folder are labeled with FW## for the firmware version they go with. Do not flash a FW55 bin with anything 
+other than an ecu already running FW55 firmware.
+
+The tools are now public to flash bins to the ecu, don't make the mistake of breaking stuff.
+
+You can use a hex editor on your 64k dump and using the memory addresses in existing XDF files you can match up the
+corresponding tables, and settings with a version of the firmware we have not covered yet. But until we have the ability to 
+release any kind of publicly available EWS deleted 512k dump that everyone can flash to convert their ecu to a unified firmware
+version, you must take carefull steps in ensuring you dont damage your vehicle.
+
+That being said, I dont take any responsibility towards anybody that flashes my firmware onto their ecu and bricks it or worse.
+
+
+
+If you are knowledgeble on the MS43 ecu's you would know that in order to use the XDF files, they first have you flash the 
+ECU with a 512k flash. This flash is what makes your ECU match the XDF they provide to tune your car. We currently do not have a 
+universal 512k flash for everyones ECU. Until then please be carefull!
